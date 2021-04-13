@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+    crossorigin="anonymous" />
+  <title></title>
+</head>
+
+<body>
+
+
+  <div class="sidenavbar">
+    <!-- NAVBAR -->
+    <!-- SIDENAV -->
+    <mat-sidenav-container autosize>
+
+      <mat-sidenav #drawer mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+        <img class="user-profile" src="/assets/Logo.png">
+        <br>
+        <mat-divider [vertical]="false"></mat-divider>
+
+        <button mat-button class="sidebarcontent" routerLink="" >
+           Dashboard
+        </button>
+        <button mat-button class="sidebarcontent" routerLink="/Inventory" >
+          Inventory Records
+        </button>
+        <button mat-button class="sidebarcontent" routerLink="/POS" >
+          Point of Sales Records
+        </button>
+        <button mat-button class="sidebarcontent" routerLink="/payroll" >
+          Payroll Records
+        </button>
+        <button mat-button class="sidebarcontent" routerLink="/finance" routerLinkActive="selected">
+          Finance Records
+        </button>
+
+      </mat-sidenav>
+
+      <mat-sidenav-content>
+        <div class="navbar">
+          <mat-toolbar class="blue-color">
+            <button mat-icon-button class="example-icon" (click)="isExpanded = !isExpanded"
+              aria-label="Example icon-button with menu icon" mat-button (click)="drawer.toggle()">
+              <mat-icon style="color:white">menu</mat-icon>
+            </button>
+           
+
+            <span class="example-spacer"></span>
+            
+
+            <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+
+              <mat-icon style="color:white">power_settings_new</mat-icon>
+            </button>
+          </mat-toolbar>
+        </div>
+            <h1>Dashboard</h1>
+            <hr>
+            <br>
+            
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+                <!--- Note that these columns can be defined in any order.
+                      The actual rendered columns are set as a property on the row definition" -->
+              
+                <!-- Position Column -->
+                <ng-container matColumnDef="position">
+                  <th mat-header-cell *matHeaderCellDef> No. </th>
+                  <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                </ng-container>
+              
+                <!-- Name Column -->
+                <ng-container matColumnDef="name">
+                  <th mat-header-cell *matHeaderCellDef> Name </th>
+                  <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+              
+                <!-- Weight Column -->
+                <ng-container matColumnDef="weight">
+                  <th mat-header-cell *matHeaderCellDef> Weight </th>
+                  <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                </ng-container>
+              
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="symbol">
+                  <th mat-header-cell *matHeaderCellDef> Symbol </th>
+                  <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="symbols">
+                    <th mat-header-cell *matHeaderCellDef> Symbols </th>
+                    <td mat-cell *matCellDef="let element"> {{element.symbols}} </td>
+                  </ng-container>
+
+                <ng-container matColumnDef="action">
+                    <th mat-header-cell *matHeaderCellDef > Action </th>
+                    <td mat-cell *matCellDef="let element"> <button mat-raised-button style="margin-right: 10px;"  (click)="openDialog()" >Edit</button> <button mat-raised-button>Delete</button> </td>
+                </ng-container>
+
+                
+              
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+              </table>
+              
+        
+
+
+       
+      
+
+          
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+</body>
+</html>

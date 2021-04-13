@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+    crossorigin="anonymous" />
+  <title></title>
+</head>
+
+<body>
+
+
+  <div class="sidenavbar">
+    <!-- NAVBAR -->
+    <!-- SIDENAV -->
+    <mat-sidenav-container autosize>
+
+      <mat-sidenav #drawer mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+        <img class="user-profile" src="/assets/Logo.png">
+        <br>
+        <mat-divider [vertical]="false"></mat-divider>
+
+        <button mat-button class="sidebarcontent" routerLink="" >
+           Dashboard
+        </button>
+        <button mat-button class="sidebarcontent" routerLink="/Inventory" routerLinkActive="selected">
+          Inventory Records
+        </button>
+        <button mat-button class="sidebarcontent" routerLink="/POS" >
+          Point of Sales Records
+        </button>
+        <button mat-button class="sidebarcontent" routerLink="/payroll" >
+          Payroll Records
+        </button>
+        <button mat-button class="sidebarcontent" routerLink="/finance" >
+          Finance Records
+        </button>
+
+      </mat-sidenav>
+
+      <mat-sidenav-content>
+        <div class="navbar">
+          <mat-toolbar class="blue-color">
+            <button mat-icon-button class="example-icon" (click)="isExpanded = !isExpanded"
+              aria-label="Example icon-button with menu icon" mat-button (click)="drawer.toggle()">
+              <mat-icon style="color:white">menu</mat-icon>
+            </button>
+           
+
+            <span class="example-spacer"></span>
+            
+
+            <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+
+              <mat-icon style="color:white">power_settings_new</mat-icon>
+            </button>
+          </mat-toolbar>
+        </div>
+            <h1>Dashboard</h1>
+            <hr>
+            <br>
+            <div class="dashboardCard">
+                <mat-card class="patients-card" style="background-color: #aec533;">
+                  <mat-card-content>
+                    <p>100</p>
+                  </mat-card-content><br><br>
+                  <mat-card-title class="poppins">Feedbacks</mat-card-title>
+                  <div class="iconsDashboard">
+                  
+                  </div>
+                </mat-card>
+      
+                <mat-card class="patients-card" style="background-color: #0b8e45d1;">
+                  <mat-card-content>
+                    <p>100</p>
+                  </mat-card-content><br><br>
+                  <mat-card-title class="poppins">Comments</mat-card-title>
+                  <div class="iconsDashboard">
+                    
+                  </div>
+                </mat-card>
+      
+                <mat-card class="patients-card" style="background-color: #94b454;">
+                  <mat-card-content>
+                    <p>100</p>
+                  </mat-card-content><br><br>
+                  <mat-card-title class="poppins">Suggestions</mat-card-title>
+                  <div class="iconsDashboard">
+                    
+                  </div>
+                </mat-card>
+      
+                <mat-card class="patients-card" style="background-color: #5f6e3c;">
+                  <mat-card-content>
+                    <p>100</p>
+                  </mat-card-content><br><br>
+                  <mat-card-title class="poppins">Questions</mat-card-title>
+                  <div class="iconsDashboard">
+                 
+                  </div>
+                </mat-card>
+              </div>
+        
+
+
+       
+      
+
+          
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+</body>
+</html>

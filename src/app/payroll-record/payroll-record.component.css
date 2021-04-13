@@ -1,0 +1,260 @@
+
+.blue-color { 
+    background-color: #94b454;
+}
+
+.example-spacer { 
+    flex: 1 1 auto;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    overflow: hidden;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color:white;
+    float: right;
+
+}
+.poppins1 {
+    font-family: 'Poppins', sans-serif;
+    float: left;
+
+}
+mat-card-title{
+    font-size: 22px;
+    float: right;
+}
+
+.iconsDashboard{
+    margin-top: -55px;
+    margin-left: 10px;
+}
+
+
+h1 {
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h3 {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+
+h4 {
+    font-size: 16px;
+    color: white;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+p {
+    float: right;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.poppins-bold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #404040;
+}
+
+
+mat-sidenav-container, mat-sidenav-content {
+    height: 100%;
+    background-color: #c1d6be;
+}
+
+mat-sidenav {
+    background-color: #aec533;
+    color: #404040;
+    font-family: 'Poppins', sans-serif;
+    width: 225px;
+    border-right: 0.75px solid lightgrey;
+
+}
+
+mat-card {
+    overflow: auto;
+    
+}
+
+
+
+.sidenavbar {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.sidebarcontent {
+  width: 100%;
+  padding: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  border-radius: 0px;
+  text-align: left;
+  
+}
+
+
+.sidenavBtn{
+    margin-left: -20px;
+    margin-right: 5px;
+}
+
+.selected { 
+    background-color: #5f6e3c;
+    color:#ffffff;
+}
+
+.resprofheader {
+    margin-top: 20px;
+}
+
+.user-profile {  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top:40px;
+}
+
+.user-profile-nav {
+    height: 30px;
+    width: 30px;
+}
+
+.dashboardCard {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  
+
+}
+
+.dashboardSecondCard {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-left: 23px;
+    padding-right: 23px;
+    
+}
+
+.patients-card {
+    width: 400px;
+    height: 160px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 25px;
+    border-radius: 0;
+}
+.patients-card1 {
+    width: 380px;
+    height: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 25px;
+}
+
+.chart-card {
+    width: 50%;
+    height: 400px;
+    margin-left: 0px;
+    margin-right: 10px;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    color: #404040;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0;
+    
+}
+
+.chart-card1 {
+    width: 50%;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 0px;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    color: #404040;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0;
+    
+}
+
+.img-card{
+    width: 50px;
+    height: 50px;
+    
+}
+
+mat-icon{
+    color: rgba(0, 0, 0, 0.54);
+}
+.ptitle
+{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 690px;
+    font-size: 25px;
+}
+
+.settledicon{
+    width: 60px;
+    float: right;
+    margin-right: -5px;
+    margin-top: -90px;
+}
+
+.scheduleicon{
+    width: 50px;
+    float: right;
+    margin-right: -5px;
+    margin-top: -90px;
+}
+
+.unsettledicon{
+    width: 60px;
+    float: right;
+    margin-right: -5px;
+    margin-top: -90px;
+}
+
+.unscheduleicon{
+    width: 50px;
+    float: right;
+    margin-right: -5px;
+    margin-top: -90px;
+}
+
+.container{
+    height: 93.5vh;
+    width:  100%;
+    background-color: white;
+}
+h1{
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+}
